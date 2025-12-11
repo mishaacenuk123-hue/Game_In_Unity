@@ -76,14 +76,7 @@ else
             wallJumpCooldown = 0;
            
         }
-    }
-
-            private void OnCollisionEnter2D(Collision2D collision)
-            {
-
-
-            }
-        
+    }   
     private bool isGrounded()
     {
         RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.down, 0.1f, groundLayer);
@@ -93,5 +86,9 @@ else
     {
         RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, new Vector2(transform.localScale.x, 0), 0.1f, wallLayer);
         return raycastHit.collider != null;
+    }
+    public bool canAttack()
+    {
+        return horizontalInput == 0 && isGrounded()&& !onWall();
     }
 }
