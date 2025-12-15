@@ -2,9 +2,11 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 3
+  serializedVersion: 2
   tags:
   - Ground
+  - Enemy
+  - Checkpoint
   layers:
   - Default
   - TransparentFX
@@ -12,12 +14,12 @@ TagManager:
   - 
   - Water
   - UI
+  - 
+  - 
   - Ground
   - Wall
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Enemy
   - 
   - 
   - 
@@ -43,16 +45,14 @@ TagManager:
     uniqueID: 0
     locked: 0
   - name: Background
-    uniqueID: 2899729073
+    uniqueID: 2233872901
     locked: 0
   - name: Foreground
-    uniqueID: 1815676119
+    uniqueID: 2519254405
     locked: 0
   - name: Player
-    uniqueID: 2141942767
+    uniqueID: 960489153
     locked: 0
   - name: Ground
-    uniqueID: 2641652869
+    uniqueID: 2649148703
     locked: 0
-  m_RenderingLayers:
-  - Default
